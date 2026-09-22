@@ -1,0 +1,10 @@
+services:
+  portfolio-node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-node
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+
