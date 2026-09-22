@@ -21,7 +21,7 @@ jobs:
             host: ${{ secrets.EC2_HOST }}
             username: ${{ secrets.EC2_USER }} 
             key: ${{ secrets.EC2_SSH_KEY }}
-            scripts:
+            script:
                cd /opt/myrepo_gitt
                git pull origin main
                docker compose down
